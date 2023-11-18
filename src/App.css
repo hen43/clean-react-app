@@ -2,6 +2,8 @@
 
 * {
   font-size: 18px;
+  margin:0;
+  padding:0;
 }
 
 .app{
@@ -9,53 +11,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.theThing {
-  width:100vw;
-  height:40rem;
-  display: flex;
+.thingy{
+  display:flex;
   justify-content: center;
   align-items: center;
-  gap:2vw;
+  min-height:35rem;
+  min-width:35rem;
+  padding:2rem;
+  gap: 2rem;
+}
+
+.robot {
+  height: 35rem;
+  width: 20rem;
+  object-fit: cover;
 }
 
 body {
   font-family: 'Lato', sans-serif;
 }
 
-img {
-  width:25vw;
-  height:17.5vw;
-  border-radius: 10%;
-  transition:0.5s;
-}
-
-img:hover{
-  width:27.5vw;
-  height:18.5vw;
-  transform: rotate(12deg);
-  transition:0.5s;
-}
-
 .text{
-  width:40rem;
-  min-width:30rem;
+  height:35rem;
+  width:20rem;
+  align-items: column;
 }
 
-h1 {
-  font-size:2.25vw;
+
+h1{
+  font-size: 5rem;
 }
 
-.literallyJustALine{
-  width:100%;
-  height:0.15vw;
-  background-color: black;
-}
-
-p{
-  font-size: 1vw;
-  line-height: 2vw;
+p {
+  font-size: 2rem;
 }
